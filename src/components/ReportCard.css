@@ -1,0 +1,147 @@
+/* ReportCard.css */
+.report-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: white;
+  border: 1px solid rgba(229, 231, 235, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.report-card-background {
+  position: absolute;
+  inset: 0;
+  /* background-image: url('/path-to-your-image.jpg'); Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+}
+
+.report-card-content {
+  position: relative;
+  padding: 24px;
+  backdrop-filter: blur(4px);
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(229, 231, 235, 1);
+}
+
+.license-plate-container {
+  display: flex;
+  align-items: center;
+}
+
+.license-plate-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2563eb;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.report-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e40af;
+}
+
+.report-date {
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.report-date svg {
+  margin-right: 4px;
+}
+
+.report-location {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.report-location svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+  margin-right: 8px;
+  color: #ef4444;
+}
+
+.report-location p {
+  margin: 0;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.report-description {
+  background-color: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.report-description p {
+  margin: 0;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.report-accent {
+  display: flex;
+  margin-top: 24px;
+  height: 4px;
+}
+
+.accent-segment {
+  height: 100%;
+  width: 20%;
+  border-radius: 9999px;
+}
+
+.accent-segment-1 {
+  background-color: #2563eb;
+}
+
+.accent-segment-2 {
+  background-color: #3b82f6;
+}
+
+.accent-segment-3 {
+  background-color: #60a5fa;
+}
+
+.accent-segment-4 {
+  background-color: #93c5fd;
+}
+
+.accent-segment-5 {
+  background-color: #bfdbfe;
+}
+
+/* Add responsive styles if needed */
+@media (max-width: 640px) {
+  .report-header {
+    flex-direction: column;
+  }
+  
+  .report-date {
+    margin-top: 12px;
+  }
+}
